@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="9" height="9" tilewidth="64" tileheight="64" infinite="0" nextlayerid="6" nextobjectid="7">
+ <tileset firstgid="1" source="../tilesets/world.tsx"/>
+ <tileset firstgid="211" source="../tilesets/objects.tsx"/>
+ <layer id="1" name="Terrain" width="9" height="9">
+  <data encoding="csv">
+42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,
+42,42,42,4,5,6,42,42,42,
+42,42,42,14,15,16,42,42,42,
+42,42,42,24,25,26,42,42,42,
+42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42
+</data>
+ </layer>
+ <objectgroup id="4" name="Entities">
+  <object id="3" name="Player" x="256" y="448">
+   <properties>
+    <property name="pos" value="player"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Collisions">
+  <object id="2" x="202" y="138" width="172" height="171.333"/>
+  <object id="6" x="416.667" y="414.492" width="61.3333" height="62.8415"/>
+ </objectgroup>
+ <objectgroup id="2" name="Objects">
+  <object id="4" gid="226" x="1.6667" y="288.667" width="128" height="192"/>
+  <object id="5" gid="228" x="416.667" y="469.333" width="64" height="128"/>
+ </objectgroup>
+</map>

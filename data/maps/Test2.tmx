@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="27" tilewidth="64" tileheight="64" infinite="0" nextlayerid="10" nextobjectid="53">
+ <tileset firstgid="1" source="../tilesets/world.tsx"/>
+ <tileset firstgid="211" source="../tilesets/objects.tsx"/>
+ <tileset firstgid="242" source="../tilesets/Grass.tsx"/>
+ <layer id="1" name="Terrain" width="27" height="27">
+  <data encoding="csv">
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
+42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42
+</data>
+ </layer>
+ <layer id="2" name="Terrain Top" width="27" height="27">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="Water"/>
+ <objectgroup id="4" name="Coast"/>
+ <objectgroup id="5" name="Objects">
+  <object id="1" gid="228" x="0" y="1472" width="64" height="128"/>
+  <object id="2" gid="228" x="0" y="1536" width="64" height="128"/>
+  <object id="3" gid="228" x="0" y="1600" width="64" height="128"/>
+  <object id="4" gid="228" x="0" y="1664" width="64" height="128"/>
+  <object id="5" gid="228" x="0" y="1728" width="64" height="128"/>
+  <object id="6" gid="228" x="0" y="1088" width="64" height="128"/>
+  <object id="7" gid="228" x="0" y="1024" width="64" height="128"/>
+  <object id="8" gid="228" x="0" y="960" width="64" height="128"/>
+  <object id="9" gid="228" x="0" y="832" width="64" height="128"/>
+  <object id="10" gid="228" x="0" y="896" width="64" height="128"/>
+  <object id="11" gid="228" x="0" y="768" width="64" height="128"/>
+  <object id="12" gid="228" x="0" y="704" width="64" height="128"/>
+  <object id="26" gid="228" x="64" y="1088" width="64" height="128"/>
+  <object id="27" gid="228" x="128" y="1088" width="64" height="128"/>
+  <object id="28" gid="228" x="64" y="1472" width="64" height="128"/>
+  <object id="29" gid="228" x="128" y="1472" width="64" height="128"/>
+ </objectgroup>
+ <objectgroup id="6" name="Collisions">
+  <object id="30" x="-33.3333" y="-58.7273" width="33.3333" height="1795.88"/>
+  <object id="31" x="1728" y="-86.1818" width="24" height="1815.18"/>
+  <object id="32" x="-26" y="1690.67" width="1778.67" height="37.3333"/>
+  <object id="33" x="0" y="1408" width="190.5" height="46"/>
+  <object id="34" x="0" y="1024" width="192" height="32.5"/>
+  <object id="35" x="0" y="-74.3333" width="1728" height="30"/>
+ </objectgroup>
+ <objectgroup id="7" name="Monsters">
+  <object id="39" gid="242" x="0" y="1152" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="40" gid="242" x="64" y="1152" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="41" gid="242" x="128" y="1152" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="42" gid="242" x="0" y="1216" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="43" gid="242" x="0" y="1280" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="44" gid="242" x="0" y="1344" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="45" gid="242" x="0" y="1408" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="46" gid="242" x="64" y="1408" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="47" gid="242" x="64" y="1344" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="48" gid="242" x="64" y="1280" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="49" gid="242" x="64" y="1216" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="50" gid="242" x="128" y="1216" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+  <object id="51" gid="242" x="128" y="1280" width="64" height="64">
+   <properties>
+    <property name="biome" value="forest"/>
+    <property name="level" type="int" value="10"/>
+    <property name="monsters" value="Atrox,Pouch"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="Entities">
+  <object id="38" name="Player" x="96" y="1216">
+   <properties>
+    <property name="direction" value="right"/>
+    <property name="pos" value="Test1"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="Transition">
+  <object id="36" x="-4" y="1088" width="20" height="256">
+   <properties>
+    <property name="pos" value="Test2"/>
+    <property name="target" value="Test1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
