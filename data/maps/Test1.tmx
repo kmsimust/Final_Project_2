@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="9" height="9" tilewidth="64" tileheight="64" infinite="0" nextlayerid="11" nextobjectid="83">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="9" height="9" tilewidth="64" tileheight="64" infinite="0" nextlayerid="11" nextobjectid="84">
  <tileset firstgid="1" source="../tilesets/world.tsx"/>
  <tileset firstgid="211" source="../tilesets/Grass.tsx"/>
  <tileset firstgid="214" source="../tilesets/objects.tsx"/>
@@ -181,20 +181,19 @@
    </properties>
    <point/>
   </object>
-  <object id="2" name="Character" x="256" y="128">
-   <properties>
-    <property name="change_direction" type="bool" value="true"/>
-    <property name="character_id" value="o2"/>
-    <property name="direction" value="left"/>
-    <property name="graphic" value="blond"/>
-    <property name="radius" value="400"/>
-   </properties>
-   <point/>
-  </object>
   <object id="81" name="Player" x="512" y="256">
    <properties>
     <property name="direction" value="left"/>
     <property name="pos" value="Test2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="83" name="Character" x="320" y="128">
+   <properties>
+    <property name="character_id" value="Nurse"/>
+    <property name="direction" value="down"/>
+    <property name="graphic" value="purple_girl"/>
+    <property name="radius" value="0"/>
    </properties>
    <point/>
   </object>

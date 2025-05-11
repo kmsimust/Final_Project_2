@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="27" tilewidth="64" tileheight="64" infinite="0" nextlayerid="10" nextobjectid="53">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="27" tilewidth="64" tileheight="64" infinite="0" nextlayerid="10" nextobjectid="66">
  <tileset firstgid="1" source="../tilesets/world.tsx"/>
  <tileset firstgid="211" source="../tilesets/objects.tsx"/>
  <tileset firstgid="242" source="../tilesets/Grass.tsx"/>
@@ -191,6 +191,74 @@
    <properties>
     <property name="direction" value="right"/>
     <property name="pos" value="Test1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="Character" x="1094" y="1288.67">
+   <properties>
+    <property name="change_direction" type="bool" value="true"/>
+    <property name="character_id" value="f3"/>
+    <property name="color" value="#00ff00"/>
+    <property name="direction" value="down"/>
+    <property name="graphic" value="fire_boss"/>
+    <property name="radius" value="0"/>
+    <property name="text_color" value="#ff0000"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Character" x="903.333" y="1290.67">
+   <properties>
+    <property name="change_direction" type="bool" value="true"/>
+    <property name="character_id" value="f2"/>
+    <property name="color" value="#00ff00"/>
+    <property name="direction" value="down"/>
+    <property name="graphic" value="fire_boss"/>
+    <property name="radius" value="0"/>
+    <property name="text_color" value="#ff0000"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Character" x="707.333" y="1292">
+   <properties>
+    <property name="change_direction" type="bool" value="true"/>
+    <property name="character_id" value="f1"/>
+    <property name="color" value="#00ff00"/>
+    <property name="direction" value="down"/>
+    <property name="graphic" value="fire_boss"/>
+    <property name="radius" value="0"/>
+    <property name="text_color" value="#ff0000"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" name="Character" x="390" y="583.333">
+   <properties>
+    <property name="change_direction" type="bool" value="true"/>
+    <property name="character_id" value="o4"/>
+    <property name="direction" value="right"/>
+    <property name="graphic" value="straw"/>
+    <property name="radius" value="400"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Character" x="388.667" y="838.667">
+   <properties>
+    <property name="change_direction" type="bool" value="true"/>
+    <property name="character_id" value="o3"/>
+    <property name="direction" value="down"/>
+    <property name="graphic" value="hat_girl"/>
+    <property name="radius" value="400"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="Character" x="960" y="640">
+   <properties>
+    <property name="change_direction" type="bool" value="true"/>
+    <property name="character_id" value="fx"/>
+    <property name="color" value="#00ff00"/>
+    <property name="direction" value="down"/>
+    <property name="graphic" value="fire_boss"/>
+    <property name="radius" value="0"/>
+    <property name="text_color" value="#ff0000"/>
    </properties>
    <point/>
   </object>
