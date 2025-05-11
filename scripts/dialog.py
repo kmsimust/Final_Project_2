@@ -41,9 +41,8 @@ class DialogTree:
             else:
                 self.end_dialog(self.character)
 
-    def update(self, dt, keys):
+    def update(self, dt):
         self.dialog_timer.update()
-        self.input(keys)
         self.current_dialog.update(dt)
 
 class DialogSprite(pygame.sprite.Sprite):

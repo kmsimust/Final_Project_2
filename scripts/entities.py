@@ -2,6 +2,7 @@ from random import choice
 from settings import *
 from support import check_connections
 from clock import Timer
+from battle_entity import BattleEntity
 
 class Entity(pygame.sprite.Sprite):
     def __init__(self, pos, frames, groups, facing_direction):
@@ -59,11 +60,15 @@ class Entity(pygame.sprite.Sprite):
 class Character(Entity):
     def __init__(self, pos, name, frames, frame_id,
                  groups, facing_direction, character_data,
-                 player, create_dialog, collision_sprites, radius):
+                 player, create_dialog, collision_sprites, radius,
+                 nurse):
         super().__init__(pos, frames, groups, facing_direction)
         self.name = name
         self.id = frame_id
         self.character_data = character_data
+        self.nurse = nurse
+        self.team = {i: BattleEntity(name, lvl) for i, (name, lvl) in character_data['monsters'].items()} if\
+                     'monsters' in character_data else None
 
         self.player = player
         self.create_dialog = create_dialog
@@ -134,17 +139,22 @@ class Player(Entity):
         self.noticed = False
 
     def input(self):
-        keys = pygame.key.get_pressed()
-        input_vector = vector()
-        if keys[pygame.K_UP]:
-            input_vector.y -= 1
-        if keys[pygame.K_DOWN]:
-            input_vector.y += 1
-        if keys[pygame.K_LEFT]:
-            input_vector.x -= 1
-        if keys[pygame.K_RIGHT]:
-            input_vector.x += 1
-        self.direction = input_vector.normalize() if input_vector else input_vector
+        if not self.blocked:
+            keys = pygame.key.get_pressed()
+            input_vector = vector()
+            if keys[pygame.K_UP]:
+                input_vector.y -= 1
+            if keys[pygame.K_DOWN]:
+                input_vector.y += 1
+            if keys[pygame.K_LEFT]:
+                input_vector.x -= 1
+            if keys[pygame.K_RIGHT]:
+                input_vector.x += 1
+            if keys[pygame.K_LSHIFT]:
+                self.speed = 750
+            else:
+                self.speed = 250
+            self.direction = input_vector.normalize() if input_vector else input_vector
 
     def move(self, dt):
         self.rect.centerx += self.direction.x * self.speed * dt
