@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>648</x>
+      <y>40</y>
+      <w>168</w>
+      <h>712</h>
+    </coordinates>
+    <panel_attributes>Game
+--
++screen
++display
++resize_display
++display_pos
++clock
++timer
++player_team
++dummy_team
++all_sprites
++collision_sprites
++character_sprites
++transition_sprites
++encounter_sprites
+transition_target
++tint_surf
++tint_mode
++tint_progess
++tint_direction
++tint_speed
++dialog
++state
++main_menu
++main_menu_open
++menu
++menu_open
++inventory
++inventory_open
++battle
++battle_defeated
++menu_frames
++tmx_map
++overworld_frames
++battle_frames
++background_frames
++font
++audio
+
+--
++import_assets
++setup
++input
++create_dialog
++end_dialog
++transition_check
++tint_screen
++end_battle
++check_encounter
++encounter_active
++set_defeat
++to_main_menu
++to_the_game
++off_menu
++resize
++run
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>648</x>
+      <y>792</y>
+      <w>168</w>
+      <h>232</h>
+    </coordinates>
+    <panel_attributes>support.py
+--
++BASE_IMG_PATH
+--
++load_image
++load_folder
++load_folder_dict
++load_tilemap
++coast_loader
++character_loader
++all_character_loader
++tmx_loader
++battle_character_loader
++outline_creator
++attack_loader
++audio_loader
++chack_connections
++draw_bar</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>208</x>
+      <y>312</y>
+      <w>168</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>Sprite
+--
++pos
++surf
++groups
++z
++image
++rect
++y_sort
++hitbox</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>208</x>
+      <y>456</y>
+      <w>168</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>BorderSprite
+--
++pos
++surf
++groups
++z
++hitbox</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>208</x>
+      <y>560</y>
+      <w>168</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>transitionSprite
+--
++pos
++size
++groups
++target
++hitbox</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>312</y>
+      <w>168</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>CollideableSprite
+--
++pos
++surf
++groups
++hitbox</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>408</y>
+      <w>168</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>MonsterpatchSprite
+--
++pos
++surf
++groups
++biome
++y_sort</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>512</y>
+      <w>168</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>AnimatedSprite
+--
++pos
++frames
++groups
++z
++frames_index</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1048</x>
+      <y>688</y>
+      <w>168</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>BattleSprite
+--
++pos
++frames
++groups
++entity
++index
++pos_index
++team
++frames_index
++apply_attack
++create_attack
++state
+--
++delayed_kill
++animate
++set_highlight
++destroy
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1048</x>
+      <y>936</y>
+      <w>168</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>EntityOutlineSprite
+--
++frames
++groups
++z
++entity_sprites
++rect
+--
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1264</x>
+      <y>688</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>BattleArtSprite
+--
++index
++entity_frames
++groups
++z
++entity_sprite
++image
++surf
++rect
+--
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1264</x>
+      <y>848</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>BattleNameSprite
+--
++index
++entity_frames
++groups
++z
++entity_sprite
++image
++surf
++rect
+--
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1264</x>
+      <y>1008</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>BattleeffectSprite
+--
++index
++entity_frames
++groups
++z
++entity_sprite
++image
++surf
++rect
+--
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1264</x>
+      <y>1168</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>BattleStatsSprite
+--
++index
++entity_frames
++groups
++z
++entity_sprite
++image
++surf
++rect
+--
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1264</x>
+      <y>1336</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>BattleLevelSprite
+--
++index
++entity_frames
++groups
++z
++entity_sprite
++image
++surf
++rect
+--
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1048</x>
+      <y>1392</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>BattleEnemySprite
+--
++index
++entity_frames
++groups
++z
++entity_sprite
++image
++surf
++rect
+--
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1048</x>
+      <y>1056</y>
+      <w>168</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>BattleAttackSprite
+--
++index
++entity_frames
++groups
++z
++entity_sprite
++image
++surf
++rect
+--
++update
++animate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1048</x>
+      <y>1224</y>
+      <w>168</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>IndicatorSprite
+--
++index
++entity_frames
++groups
++z
++entity_sprite
++image
++surf
++rect
+--
++update
++animate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>432</x>
+      <y>152</y>
+      <w>168</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Inventory
+--
++display
++entity
+--
++input
++display_list
++display_main
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>432</x>
+      <y>312</y>
+      <w>168</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>AllSprites
+--
++display
++display_surface
++offset
++shadow_surf
++notice_surf
+--
++draw</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>848</x>
+      <y>688</y>
+      <w>168</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>BattleSprites
+--
++display
+--
++draw</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>280</y>
+      <w>216</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>250.0;40.0;250.0;10.0;10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>536</x>
+      <y>280</y>
+      <w>128</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>280</y>
+      <w>144</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>160.0;10.0;30.0;10.0;30.0;100.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>376</y>
+      <w>48</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>352</y>
+      <w>40</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;140.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>456</y>
+      <w>40</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>30.0;10.0;30.0;140.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>496</y>
+      <w>48</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>560</y>
+      <w>48</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;40.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>592</x>
+      <y>200</y>
+      <w>72</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>744</y>
+      <w>24</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>416</y>
+      <w>160</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;480.0;180.0;480.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>808</x>
+      <y>744</y>
+      <w>136</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;150.0;70.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>808</x>
+      <y>648</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0;120.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>960</x>
+      <y>648</y>
+      <w>192</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0;220.0;10.0;220.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1128</x>
+      <y>648</y>
+      <w>152</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0;140.0;160.0;170.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1024</x>
+      <y>648</y>
+      <w>40</w>
+      <h>368</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;440.0;30.0;440.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1024</x>
+      <y>992</y>
+      <w>40</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0;30.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1232</x>
+      <y>768</y>
+      <w>48</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0;40.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1232</x>
+      <y>912</y>
+      <w>48</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0;40.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1232</x>
+      <y>1072</y>
+      <w>48</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0;40.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1024</x>
+      <y>1128</y>
+      <w>40</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0;30.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1232</x>
+      <y>1232</y>
+      <w>48</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;220.0;40.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1024</x>
+      <y>1288</y>
+      <w>40</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0;30.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>856</x>
+      <y>256</y>
+      <w>168</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Entity
+--
++pos
++frames
++group
++facing-direction
++z
++frame_index
++frames
++direction
++speed
++blocked
++image
++hitbox
++y_sort
+--
++get_state
++block
++unblock
++change_facing_direction
++animate
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>808</x>
+      <y>528</y>
+      <w>144</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;160.0;110.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1064</x>
+      <y>256</y>
+      <w>168</w>
+      <h>328</h>
+    </coordinates>
+    <panel_attributes>Character
+--
++pos
++frames
++group
++facing-direction
++z
++frame_index
++frames
++direction
++speed
++blocked
++image
++hitbox
++y_sort
+--
++get_state
++block
++unblock
++change_facing_direction
++animate
++update
++start_move
++raycast
++get_dialog
++line_of_sight</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1248</x>
+      <y>256</y>
+      <w>168</w>
+      <h>312</h>
+    </coordinates>
+    <panel_attributes>Player
+--
++pos
++frames
++group
++facing-direction
++z
++frame_index
++frames
++direction
++speed
++blocked
++image
++hitbox
++y_sort
+--
++get_state
++block
++unblock
++change_facing_direction
++animate
++update
++collision
++move
++ input</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>920</x>
+      <y>216</y>
+      <w>248</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0;290.0;10.0;290.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1144</x>
+      <y>216</y>
+      <w>208</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;240.0;10.0;240.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>856</x>
+      <y>40</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>DialogTree
+--
++character
++character_icon
++player
++font
++end_dialog
+--
++input
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1048</x>
+      <y>40</y>
+      <w>168</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>DialogSprite
+--
++character
++character_icon
++player
++font
++end_dialog
++z
++counter
++image
++rect
+--
++update</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>928</x>
+      <y>0</y>
+      <w>224</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0;260.0;10.0;260.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>872</x>
+      <y>184</y>
+      <w>24</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>840</x>
+      <y>824</y>
+      <w>168</w>
+      <h>312</h>
+    </coordinates>
+    <panel_attributes>Battle
+--
++display
++player_team
++opponent_team
++bg_frames
++fonts
++character
++end_battle
+=width
++height
+=display
++entity_frames
+--
++ setup
++create_entity
++listbox
++input
++update_timers
++check_death
++opponent_attack
++cheak_death
++apply_attack
++check_end_battle
+=exit_result</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>736</x>
+      <y>552</y>
+      <w>152</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>744</y>
+      <w>24</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+</diagram>

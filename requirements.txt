@@ -1,0 +1,9 @@
+The requirements module
+
+    1: pytmx
+    2: tkinter
+    3: csv
+    4: numpy
+    5: pandas as pd
+    6: seaborn as sns
+    7: matplotlib

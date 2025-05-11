@@ -358,6 +358,7 @@ class Game:
             self.tint_screen(dt)
             self.resize_display.blit(pygame.transform.scale(self.display, self.resize_display.get_size()), (0, 0))
             pygame.display.update()
-            
-game = Game()
-game.run()
+
+if __name__ == '__main__':            
+    game = Game()
+    game.run()
