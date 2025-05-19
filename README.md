@@ -31,6 +31,7 @@ Turn Based game inspired by pokemon and RPGs-Maker.
     
         The youtube clip:
         https://www.youtube.com/watch?v=fo4e3njyGy0
+        
         The repository:
         https://github.com/clear-code-projects/Python-Monsters
         https://drive.google.com/drive/folders/12T4zuZchZRmQQ5I3s7SxoA5aRnoytbJP
@@ -46,16 +47,5 @@ Turn Based game inspired by pokemon and RPGs-Maker.
         
         The window and game layering:
         https://www.youtube.com/watch?v=2gABYM5M0ww&t=19383s
-
-    3. The Answer
-
-        1. What mistake did you make?
-            I didn't properly give credit to the owner of the in-game sprite that I use.
-
-        2. Why is it an ethics problem that you did not refer to or clarify which part you took from other work?
-            It's like stealing and impersonation from the real owner of these arts.
-
-        3. What can you do to fix the mistake?
-            Properly give the credits to the owner of the arts and its artist.
 
 
