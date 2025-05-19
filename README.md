@@ -20,3 +20,8 @@
     esc : menu
 
 Turn Based game inspired by pokemon and RPGs-Maker.
+
+# The references and sources
+    The coding style and most of in-game sprite image come from this video.
+    https://www.youtube.com/watch?v=fo4e3njyGy0
+
