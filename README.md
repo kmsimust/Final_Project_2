@@ -27,15 +27,24 @@ Turn Based game inspired by pokemon and RPGs-Maker.
     https://www.youtube.com/watch?v=fo4e3njyGy0
 
     1. The in-game sprites for both player and the monster can be found in this clip and this repository.
+        also these includeing a game code, backgrounds, game sprites, and in-game effects.
+    
         The youtube clip:
         https://www.youtube.com/watch?v=fo4e3njyGy0
         The repository:
         https://github.com/clear-code-projects/Python-Monsters
         https://drive.google.com/drive/folders/12T4zuZchZRmQQ5I3s7SxoA5aRnoytbJP
 
+        The image and arts can be found in their graphics folder.
+
     2. Most of the code I have copy and studied from these clips.
+        The game code:
         https://www.youtube.com/watch?v=fo4e3njyGy0
-        https://www.youtube.com/watch?v=DhK5P2bWznA&t=488s
+        
+        The dialog system:
+        https://www.youtube.com/watch?v=DhK5P2bWznA&t=488s'
+        
+        The window and game layering:
         https://www.youtube.com/watch?v=2gABYM5M0ww&t=19383s
 
     3. The Answer
