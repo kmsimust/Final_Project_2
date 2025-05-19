@@ -10,7 +10,8 @@
     
     2. Download all the files
     3. Make sure you are in the game folder.
-    4. Run the game in main.py
+    4. Go to scripts and go in main.py
+    5. Run the game in main.py
 
 # Controls
     <^> arrows: using for moving and selecting.
