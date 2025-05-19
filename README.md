@@ -46,6 +46,6 @@ Turn Based game inspired by pokemon and RPGs-Maker.
             It's like stealing and impersonation from the real owner of these arts.
 
         3. What can you do to fix the mistake?
-            Properly give the credits to the owner of the arts.
+            Properly give the credits to the owner of the arts and its artist.
 
 
